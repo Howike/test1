@@ -33,13 +33,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="965" />
+          <entry key="html" value="1013" />
           <entry key="py" value="864" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="965" />
+          <entry key="HTML" value="1013" />
           <entry key="Python" value="864" />
         </counts>
       </usages-collector>
@@ -94,7 +94,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/theme.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="567">
+            <state relative-caret-position="324">
               <caret line="57" column="17" selection-start-line="57" selection-start-column="17" selection-end-line="57" selection-end-column="17" />
               <folding>
                 <element signature="e#6739#6745#0" expanded="true" />
@@ -108,8 +108,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/page.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1998">
-              <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+            <state relative-caret-position="2376">
+              <caret line="88" column="23" selection-start-line="88" selection-start-column="23" selection-end-line="88" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -144,8 +144,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gallary/templates/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1404">
-              <caret line="52" column="14" lean-forward="true" selection-start-line="52" selection-start-column="14" selection-end-line="52" selection-end-column="14" />
+            <state relative-caret-position="-1350">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" selection-end-column="26" />
               <folding>
                 <element signature="e#2808#2815#0" expanded="true" />
                 <element signature="n#src#0;n#img#0;n#div#0;n#div#0;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -182,13 +182,13 @@
         <option value="$PROJECT_DIR$/test1/urls.py" />
         <option value="$PROJECT_DIR$/gallary/views.py" />
         <option value="$PROJECT_DIR$/gallary/models.py" />
-        <option value="$PROJECT_DIR$/templates/page.html" />
         <option value="$PROJECT_DIR$/templates/sign_in.html" />
         <option value="$PROJECT_DIR$/templates/1.html" />
         <option value="$PROJECT_DIR$/test1/settings.py" />
         <option value="$PROJECT_DIR$/templates/home.html" />
         <option value="$PROJECT_DIR$/templates/theme.html" />
         <option value="$PROJECT_DIR$/gallary/templates/home.html" />
+        <option value="$PROJECT_DIR$/templates/page.html" />
       </list>
     </option>
   </component>
@@ -423,7 +423,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/theme.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
+        <state relative-caret-position="324">
           <caret line="57" column="17" selection-start-line="57" selection-start-column="17" selection-end-line="57" selection-end-column="17" />
           <folding>
             <element signature="e#6739#6745#0" expanded="true" />
@@ -435,8 +435,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/gallary/templates/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1404">
-          <caret line="52" column="14" lean-forward="true" selection-start-line="52" selection-start-column="14" selection-end-line="52" selection-end-column="14" />
+        <state relative-caret-position="-1350">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" selection-end-column="26" />
           <folding>
             <element signature="e#2808#2815#0" expanded="true" />
             <element signature="n#src#0;n#img#0;n#div#0;n#div#0;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -453,8 +453,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/page.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1998">
-          <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+        <state relative-caret-position="2376">
+          <caret line="88" column="23" selection-start-line="88" selection-start-column="23" selection-end-line="88" selection-end-column="23" />
         </state>
       </provider>
     </entry>
