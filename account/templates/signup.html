@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<!-- saved from url=(0059)https://getbootstrap.com/docs/4.1/examples/floating-labels/ -->
+<html lang="zh-CN" class="translated-ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="https://getbootstrap.com/favicon.ico">
+
+    <title>signup</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static "bootstrap.min.css" %}" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="{% static "floating-labels.css" %}" rel="stylesheet">
+
+  <body>
+    <form class="form-signin" method="post" action="{% url '注册页面' %}">
+      {% csrf_token %}
+      <div class="text-center mb-4">
+        <img class="mb-4" src="{% static "bootstrap-solid.svg" %}" alt="" width="72" height="72">
+        <h1 class="h3 mb-3 font-weight-normal"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">注册</font></font></h1>
+      </div>
+
+      <div class="form-label-group">
+        <input type="text" id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus="" name="用户名">
+        <label for="inputEmail"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">用户名</font></font></label>
+      </div>
+
+      <div class="form-label-group">
+        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="" name="密码">
+        <label for="inputPassword"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">密码</font></font></label>
+      </div>
+
+       <div class="form-label-group">
+        <input type="password" id="inputPassword2" class="form-control" placeholder="Password" required="" name="确认密码">
+        <label for="inputPassword2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">确认密码</font></font></label>
+       </div>
+
+      <div class="checkbox mb-3">
+        <label>
+          <input type="checkbox" value="remember-me"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> 记住账号
+        </font></font></label>
+      </div>
+      <button class="btn btn-lg btn-primary btn-block" type="submit"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">注册</font></font></button>
+      <p class="mt-5 mb-3 text-muted text-center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">©2017-2018</font></font></p>
+    </form>
+  </body>
+</html>
