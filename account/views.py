@@ -1,6 +1,9 @@
-from django.shortcuts import render,redirect
+from django.shortcuts import render, redirect
 from django.contrib.auth.models import User
 from django.contrib import auth
+from django.contrib.auth.decorators import login_required
+from .models import Article
+from django.utils import timezone
 
 # Create your views here.
 
@@ -42,16 +45,32 @@ def logout(request):
         auth.logout(request)
         return redirect('主页')
 
-
+@login_required
 def publish(request):
     if request.method == 'GET':
         return render(request, 'publish.html')
     elif request.method == 'POST':
-        title_name = request.POST['💗の名字']
-        title_sname = request.POST['💗の小名']
+        title = request.POST['💗の名字']
+        sTitle = request.POST['💗の小名']
         article = request.POST['💗の话']
-        icon = request.POST['萌萌の样子']
-        image = request.POST['💗の样子']
-        return render(request, 'publish.html')
+        try:
+            icon = request.POST['萌萌の样子']
+            image = request.POST['💗の样子']
+
+            articles = Article()
+            articles.title = title
+            articles.sTitle = sTitle
+            articles.article = article
+            articles.icon = icon
+            articles.image = image
+
+            articles.pub_data = timezone.datetime.now()
+            articles.publisher = request.user
+            articles.save()
+            return redirect('主页')
+        except Exception as err:
+            return render(request, 'publish.html', {'错误': '请上传图片哦'})
+
+
 
 
