@@ -43,3 +43,15 @@ def logout(request):
         return redirect('主页')
 
 
+def publish(request):
+    if request.method == 'GET':
+        return render(request, 'publish.html')
+    elif request.method == 'POST':
+        title_name = request.POST['💗の名字']
+        title_sname = request.POST['💗の小名']
+        article = request.POST['💗の话']
+        icon = request.POST['萌萌の样子']
+        image = request.POST['💗の样子']
+        return render(request, 'publish.html')
+
+
