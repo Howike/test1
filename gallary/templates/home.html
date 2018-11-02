@@ -44,7 +44,7 @@
 
         <div class="row featurette">
           <div class="col-md-7">
-            <a href="{{ gallary.id }}"><h2 class="featurette-heading">{{ gallary.title }}</h2></a>
+            <a href="gallary/{{ gallary.id }}"><h2 class="featurette-heading">{{ gallary.title }}</h2></a>
             <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
           </div>
           <div class="col-md-5">
@@ -52,6 +52,21 @@
           </div>
         </div>
         {% endfor %}
+
+        {% for article in articles.all %}
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <a href="account/{{ article.id }}"><h2 class="featurette-heading">{{ article.title }}</h2></a>
+            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          </div>
+          <div class="col-md-5">
+            <img class="featurette-image img-fluid mx-auto" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image">
+          </div>
+        </div>
+        {% endfor %}
+
 
         <hr class="featurette-divider">
 

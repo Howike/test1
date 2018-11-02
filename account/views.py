@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth.models import User
 from django.contrib import auth
 from django.contrib.auth.decorators import login_required
@@ -44,6 +44,12 @@ def logout(request):
     if request.method == 'POST':
         auth.logout(request)
         return redirect('主页')
+
+
+def article(request, article_id):
+    page = get_object_or_404(Article, pk=article_id)
+    return render(request, 'page.html', {'page': page})
+
 
 @login_required
 def publish(request):
